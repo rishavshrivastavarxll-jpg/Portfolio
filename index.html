@@ -1,0 +1,258 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Rishav Portfolio</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css">
+    <link rel="stylesheet" href="style.css">
+    <script type="text/javascript" src="https://cdn.jsdelivr.net/npm/@emailjs/browser@4/dist/email.min.js">
+    </script>
+    <script type="text/javascript">
+        (function () {
+            emailjs.init("r74OcD7Im6mSK8Hgz");
+        })();
+    </script>
+</head>
+
+<body>
+    <header>
+        <div class="container">
+            <nav>
+                <a href="#home" class="logo">Portfo<span>lio.</span></a>
+                <ul class="nav-links">
+                    <li><a href="#home" class="active">Home</a></li>
+                    <li><a href="#about">About</a></li>
+                    <li><a href="#skills">Services</a></li>
+                    <li><a href="#certificate">Certificates</a></li>
+                    <li><a href="#portfolio">Projects</a></li>
+                    <li><a href="#contact">Contact</a></li>
+                </ul>
+                <button id="theme-toggle" aria-label="Toggle Dark/Light Mode">
+                    <i class="fas fa-sun"></i>
+                </button>
+            </nav>
+        </div>
+    </header>
+
+    <main>
+        <section id="home" class="hero container">
+            <div class="hero-image">
+                <img src="images/profile.JPG" alt="Rishav Raj Verma" id="profile-img">
+            </div>
+
+            <!-- Modal / Lightbox for zoom -->
+            <div id="image-modal" class="image-modal">
+                <span class="close-modal">&times;</span>
+                <img class="modal-content" id="modal-img">
+            </div>
+
+            <div class="hero-content">
+                <p>Hello, It's Me</p>
+                <h1>Rishav Raj <span>Verma</span></h1>
+                <p>And I'm a <span id="typed-text"></span></p>
+                <p>Building beautiful and functional Software with a focus on user experience and clean code.</p>
+                <ul class="social-links">
+                    <li><a href="#" aria-label="Github"><i
+                                class="fab fa-github"></i></a></li>
+                    <li><a href="https://x.com/Cute_rishav" aria-label="Twitter"><i class="fab fa-twitter"></i></a></li>
+                    <li><a href="https://www.instagram.com/cute_rishav/" aria-label="Dribbble"><i
+                                class="fa-brands fa-instagram"></i></a></li>
+                    <li><a href="https://www.linkedin.com/in/rishav-raj-verma-693103265/" aria-label="LinkedIn"><i
+                                class="fab fa-linkedin-in"></i></a></li>
+                    <li><a href="https://rishavshrivastavarxl.blogspot.com/?m=1" aria-label="LinkedIn"><i
+                                class="fa-brands fa-blogger"></i></a></li>
+                </ul>
+                <a href="https://drive.google.com/file/d/1TTHt9dRcz_ZXWxg2aZNDzio3QQk0lwH5/view?usp=drive_link"
+                    class="btn" download>Download CV</a>
+            </div>
+        </section>
+
+        <section id="about" class="container section-fade-in">
+            <h2>About <span>Me</span></h2>
+            <div class="about-me">
+                <h3>MCA <span>Sudent</span></h3>
+                <p>I Currently parsuing MCA from Guru Ghasidas Vishvidyalya, Bilaspur, Chhatisgarh. I learn many subject
+                    like AI, ML, Neural Network, Data Mining & Data Warehouse, Data Science and many more. I thanks to
+                    my teacher to taught me many subject and guide me for many Projects and Model.</p>
+                <a href="#" class="btn">Read More</a>
+            </div>
+        </section>
+
+        <section id="skills" class="container section-fade-in">
+            <h2>My <span>Skills</span></h2>
+            <div class="stats-grid">
+                <div class="stat-item">
+                    <h3>90%</h3>
+                    <p>HTML/CSS</p>
+                </div>
+                <div class="stat-item">
+                    <h3>80%</h3>
+                    <p>Java</p>
+                </div>
+                <div class="stat-item">
+                    <h3>80%</h3>
+                    <p>AI/ML</p>
+                </div>
+                <div class="stat-item">
+                    <h3>90%</h3>
+                    <p>Microsoft Office</p>
+                </div>
+                <div class="stat-item">
+                    <h3>80%</h3>
+                    <p>Data Science</p>
+                </div>
+                <div class="stat-item">
+                    <h3>95%</h3>
+                    <p>Problem Solving</p>
+                </div>
+            </div>
+
+
+            <h2 style="margin-top: 80px;">What I <span>Do</span></h2>
+            <div class="services-grid">
+                <div class="service-card">
+                    <i class="fas fa-laptop-code"></i>
+                    <h3>Frontend Development</h3>
+                    <p>Building responsive Website.</p>
+                    <a href="#" class="btn">Learn More</a>
+                </div>
+                <div class="service-card">
+                    <i class="fas fa-palette"></i>
+                    <h3>AI/ML Model</h3>
+                    <p>Build Model with help of datasets in Python Code.</p>
+                    <a href="#" class="btn">Learn More</a>
+                </div>
+                <div class="service-card">
+                    <i class="fas fa-server"></i>
+                    <h3>Backend Integration</h3>
+                    <p>Working with **Flask, Python, and APIs** to ensure seamless data flow and performance.</p>
+                    <a href="#" class="btn">Learn More</a>
+                </div>
+                <div class="service-card">
+                    <i class="fa-solid fa-database"></i>
+                    <h3>DataBase</h3>
+                    <p>Good Knowledge of **SQL, Excel, MS Access** to flow of data.</p>
+                    <a href="#" class="btn">Learn More</a>
+                </div>
+            </div>
+        </section>
+
+        <section id="certificate" class="container section-fade-in">
+            <div class="portfolio-grid">
+                <div class="portfolio-item">
+                    <p><a href="//www.life-global.org/certificate/ccf233f7-2aaf-4c8c-a8f8-243f03e8bafa"><img
+                                src="images/datasciencean.png" alt="certificate"></a></p>
+                </div>
+                <div class="portfolio-item">
+                    <p><a href="#"><img src="images/ai.png" alt="certificate"></a></p>
+                </div>
+                <div class="portfolio-item">
+                    <p><a href="#"><img src="images/aws.png" alt="certificate"></a></p>
+                </div>
+                <div class="portfolio-item">
+                    <p><a href="#"><img src="images/java.png" alt="certificate"></a></p>
+                </div>
+                <div class="portfolio-item">
+                    <p><a href="#"><img src="images/fullstack.png" alt="certificate"></a></p>
+                </div>
+                <div class="portfolio-item">
+                    <p><a href="#"><img src="images/web_dev_sololearn.png" alt="certificate"></a></p>
+                </div>
+            </div>
+        </section>
+
+
+        <section id="portfolio" class="container section-fade-in">
+            <h2>Latest <span>Project</span></h2>
+            <div class="portfolio-grid">
+                <div class="portfolio-item">
+                    <img src="images/exit_poll.jpg" alt="Exit Poll Prediction">
+                    <div class="overlay">
+                        <h3>Exit Poll Prediction Model</h3>
+                        <p>AI/ML with Python with Datasets </p>
+                    </div>
+                </div>
+                <div class="portfolio-item">
+                    <img src="images/videoyours.png" alt="Video Download from Any Platform">
+                    <div class="overlay">
+                        <h3>Video Download from Any Platform, No Registration Required</h3>
+                        <p>Download video from Youtube, Instagram, Facebook, Twitter</p>
+                    </div>
+                </div>
+                <div class="portfolio-item">
+                    <img src="images/jarvish.jpg" alt="Jarvish AI Assistant">
+                    <div class="overlay">
+                        <h3>Jarvish AI Assistant</h3>
+                        <p>Jarvish is an AI-powered voice assistant Host on Website.</p>
+                    </div>
+                </div>
+                <div class="portfolio-item">
+                    <img src="images/bank_management.png" alt="Bank Management System">
+                    <div class="overlay">
+                        <h3>Bank Management System</h3>
+                        <p>GUI Based Application by using JavaSwing</p>
+                    </div>
+                </div>
+                <div class="portfolio-item">
+                    <img src="images/college_website.jpg" alt="College Website">
+                    <div class="overlay">
+                        <h3>College Website</h3>
+                        <p>Python Flask with Database Connectivity</p>
+                    </div>
+                </div>
+                <div class="portfolio-item">
+                    <img src="images/blog_website.png" alt="Blog Website">
+                    <div class="overlay">
+                        <h3>Blog Website</h3>
+                        <p>Python Flask</p>
+                    </div>
+                </div>
+                <div class="portfolio-item">
+                    <img src="images/voting_system.jpg" alt="Voting System">
+                    <div class="overlay">
+                        <h3>Voting System</h3>
+                        <p>Python Thinker</p>
+                    </div>
+                </div>
+                <div class="portfolio-item">
+                    <img src="images/quiz.png" alt="Quiz">
+                    <div class="overlay">
+                        <h3>Quiz</h3>
+                        <p>C Programming</p>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <section id="contact" class="container section-fade-in">
+            <h2>Contact <span>Me!</span></h2>
+            <div class="contact-form">
+                <form id="contact-form" method="POST">
+                    <div class="form-group two-columns">
+                        <div><input type="text" name="fullName" placeholder="Full Name" required></div>
+                        <div><input type="email" name="emailAddress" placeholder="Email Address" required></div>
+                    </div>
+                    <div class="form-group two-columns">
+                        <div><input type="text" name="mobileNumber" placeholder="Mobile Number"></div>
+                        <!-- <div><input type="text" name="emailSubject" placeholder="Email Subject"></div> -->
+                    </div>
+                    <div class="form-group full-width">
+                        <textarea name="yourMessage" placeholder="Your Message" rows="6" required></textarea>
+                    </div>
+                    <button type="submit" class="btn">Send Message</button>
+                </form>
+            </div>
+        </section>
+    </main>
+
+    <footer>
+        <div class="container">
+            <p>&copy; 2023 Rishav Shrivastava. All rights reserved.</p>
+        </div>
+    </footer>
+    <script src="script.js" defer></script>
+</body>
+
+</html>
