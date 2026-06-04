@@ -134,24 +134,46 @@ document.addEventListener('DOMContentLoaded', () => {
 });
 // --- IMAGE ZOOM MODAL ---
 const profileImg = document.getElementById('profile-img');
+const portfolioImages = document.querySelectorAll('.portfolio-item img');
 const imageModal = document.getElementById('image-modal');
 const modalImg = document.getElementById('modal-img');
 const closeModal = document.querySelector('.close-modal');
 
-if (profileImg && imageModal && modalImg) {
-    profileImg.addEventListener('click', () => {
-        modalImg.src = profileImg.src;
-        imageModal.style.display = 'flex';
+function openImageModal(image) {
+    modalImg.src = image.src;
+    modalImg.alt = image.alt || 'Expanded portfolio image';
+    imageModal.style.display = 'flex';
+    imageModal.setAttribute('aria-hidden', 'false');
+    document.body.classList.add('modal-open');
+}
+
+function closeImageModal() {
+    imageModal.style.display = 'none';
+    imageModal.setAttribute('aria-hidden', 'true');
+    document.body.classList.remove('modal-open');
+}
+
+if (imageModal && modalImg && closeModal) {
+    [profileImg, ...portfolioImages].filter(Boolean).forEach((image) => {
+        image.addEventListener('click', (e) => {
+            e.preventDefault();
+            e.stopPropagation();
+            openImageModal(image);
+        });
     });
 
-    closeModal.addEventListener('click', () => {
-        imageModal.style.display = 'none';
-    });
+    closeModal.addEventListener('click', closeImageModal);
 
     // Close when clicking outside image
     imageModal.addEventListener('click', (e) => {
         if (e.target === imageModal) {
-            imageModal.style.display = 'none';
+            closeImageModal();
+        }
+    });
+
+    document.addEventListener('keydown', (e) => {
+        if (e.key === 'Escape' && imageModal.style.display === 'flex') {
+            closeImageModal();
         }
     });
 }
@@ -177,4 +199,3 @@ if (contactForm) {
             });
     });
 }
-
