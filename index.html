@@ -5,6 +5,7 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Rishav Portfolio</title>
+    <link rel="icon" href="images/favicon-profile-circle.png" type="image/png">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css">
     <link rel="stylesheet" href="style.css">
     <script type="text/javascript" src="https://cdn.jsdelivr.net/npm/@emailjs/browser@4/dist/email.min.js">
@@ -43,9 +44,9 @@
             </div>
 
             <!-- Modal / Lightbox for zoom -->
-            <div id="image-modal" class="image-modal">
+            <div id="image-modal" class="image-modal" aria-hidden="true">
                 <span class="close-modal">&times;</span>
-                <img class="modal-content" id="modal-img">
+                <img class="modal-content" id="modal-img" alt="">
             </div>
 
             <div class="hero-content">
@@ -54,8 +55,7 @@
                 <p>And I'm a <span id="typed-text"></span></p>
                 <p>Building beautiful and functional Software with a focus on user experience and clean code.</p>
                 <ul class="social-links">
-                    <li><a href="https://github.com/Rishav-Shrivastava" aria-label="Github"><i
-                                class="fab fa-github"></i></a></li>
+                    <li><a href="#" aria-label="Github"><i class="fab fa-github"></i></a></li>
                     <li><a href="https://x.com/Cute_rishav" aria-label="Twitter"><i class="fab fa-twitter"></i></a></li>
                     <li><a href="https://www.instagram.com/cute_rishav/" aria-label="Dribbble"><i
                                 class="fa-brands fa-instagram"></i></a></li>
@@ -72,41 +72,51 @@
         <section id="about" class="container section-fade-in">
             <h2>About <span>Me</span></h2>
             <div class="about-me">
-                <h3>MCA <span>Sudent</span></h3>
-                <p>I Currently parsuing MCA from Guru Ghasidas Vishvidyalya, Bilaspur, Chhatisgarh. I learn many subject
-                    like AI, ML, Neural Network, Data Mining & Data Warehouse, Data Science and many more. I thanks to
-                    my teacher to taught me many subject and guide me for many Projects and Model.</p>
+                <h3>MCA <span>Postgraduate</span></h3>
+                <p>I recently completed my MCA from Guru Ghasidas Vishwavidyalaya, Bilaspur, Chhattisgarh, securing an
+                    8.56 CGPA out of 10. During my studies, I learned subjects like Artificial Intelligence, Machine
+                    Learning, Neural Networks, Data Mining, Data Warehousing, and Data Science. I also worked on several
+                    projects and models that helped me improve my technical skills and problem-solving ability.</p>
                 <a href="#" class="btn">Read More</a>
             </div>
         </section>
 
         <section id="skills" class="container section-fade-in">
             <h2>My <span>Skills</span></h2>
-            <div class="stats-grid">
-                <div class="stat-item">
-                    <h3>90%</h3>
-                    <p>HTML/CSS</p>
+            <p class="skills-intro">Core tools and technologies used across projects and coursework.</p>
+            <div class="skills-grid">
+                <div class="skill-card">
+                    <h3>Programming</h3>
+                    <p>C, C++, Java, Python, JavaScript</p>
                 </div>
-                <div class="stat-item">
-                    <h3>80%</h3>
-                    <p>Java</p>
+                <div class="skill-card">
+                    <h3>AI &amp; ML</h3>
+                    <p>Artificial Intelligence, Machine Learning, Deep Learning, CNN</p>
                 </div>
-                <div class="stat-item">
-                    <h3>80%</h3>
-                    <p>AI/ML</p>
+                <div class="skill-card">
+                    <h3>Frameworks</h3>
+                    <p>Flask, Streamlit</p>
                 </div>
-                <div class="stat-item">
-                    <h3>90%</h3>
-                    <p>Microsoft Office</p>
+                <div class="skill-card">
+                    <h3>Web</h3>
+                    <p>HTML5, CSS</p>
                 </div>
-                <div class="stat-item">
-                    <h3>80%</h3>
-                    <p>Data Science</p>
+                <div class="skill-card">
+                    <h3>Data</h3>
+                    <p>SQL, MySQL, Pandas, NumPy, Matplotlib</p>
                 </div>
-                <div class="stat-item">
-                    <h3>95%</h3>
-                    <p>Problem Solving</p>
+                <div class="skill-card">
+                    <h3>Tools</h3>
+                    <p>Git, GitHub, Microsoft 365</p>
                 </div>
+            </div>
+            <div class="skill-tags" aria-label="Additional skills">
+                <span>Data Structures</span>
+                <span>Data Science</span>
+                <span>Model Training</span>
+                <span>API Integration</span>
+                <span>UI Development</span>
+                <span>Problem Solving</span>
             </div>
 
 
@@ -168,59 +178,99 @@
             <h2>Latest <span>Project</span></h2>
             <div class="portfolio-grid">
                 <div class="portfolio-item">
+                    <img src="images/smart_healthcare.png" alt="Smart Healthcare Assitant and Medicine Risk Analysis">
+                    <div class="overlay">
+                        <h3>Smart Healthcare Assitant and Medicine Risk Analysis</h3>
+                        <p>Developed an AI-powered healthcare assistant that predicts
+                            diseases based on user symptoms using Machine Learning
+                            algorithms. Implemented disease prediction, medicine
+                            recommendation, overdose risk analysis, and AI chatbot support
+                            using Python, Streamlit, Scikit-learn, and Pandas. </p>
+                    </div>
+                </div>
+                <div class="portfolio-item">
                     <img src="images/exit_poll.jpg" alt="Exit Poll Prediction">
                     <div class="overlay">
                         <h3>Exit Poll Prediction Model</h3>
-                        <p>AI/ML with Python with Datasets </p>
+                        <p>Developed a machine learning-based election prediction system using more than 10 years of
+                            Bihar election datasets. Performed data preprocessing, trend analysis, and constituency-wise
+                            prediction to forecast probable election outcomes. Implemented data handling and result
+                            visualization using Python, Flask, Pandas.</p>
                     </div>
                 </div>
                 <div class="portfolio-item">
                     <img src="images/videoyours.png" alt="Video Download from Any Platform">
                     <div class="overlay">
-                        <h3>Video Download from Any Platform, No Registration Required</h3>
-                        <p>Download video from Youtube, Instagram, Facebook, Twitter</p>
+                        <h3>Universal Video Downloader</h3>
+                        <p>Built a Flask-based web application for downloading videos from multiple platforms like
+                            YouTube, Instagram, Facebook, and Twitter using yt-dlp. Implemented secure server-side
+                            downloading, format selection, responsive UI, dark/light mode, and error handling using
+                            Flask, JavaScript, HTML, CSS, and Python.No Registration Required</p>
+                    </div>
+                </div>
+                <div class="portfolio-item">
+                    <img src="images/pdf_unlock.png" alt="PDF Unlocker">
+                    <div class="overlay">
+                        <h3>PDF Unlocker</h3>
+                        <p>Developed a Python-based application for unlocking password-protected PDF files like Aadhar,
+                            Pan, etc. Implemented
+                            secure handling of PDF encryption, user-friendly interface, and error management using
+                            PyPDF2 and Tkinter.It is only for Personal use not for other purpose.</p>
                     </div>
                 </div>
                 <div class="portfolio-item">
                     <img src="images/jarvish.jpg" alt="Jarvish AI Assistant">
                     <div class="overlay">
                         <h3>Jarvish AI Assistant</h3>
-                        <p>Jarvish is an AI-powered voice assistant Host on Website.</p>
+                        <p>Developed Jarvish, an AI-powered voice assistant hosted on a web platform. It can respond to
+                            user commands, provide quick information, and assist with basic tasks through an interactive
+                            and user-friendly interface.</p>
                     </div>
                 </div>
                 <div class="portfolio-item">
                     <img src="images/bank_management.png" alt="Bank Management System">
                     <div class="overlay">
                         <h3>Bank Management System</h3>
-                        <p>GUI Based Application by using JavaSwing</p>
+                        <p>Developed a GUI-based Banking Management System using Java, JDBC, and MySQL to manage
+                            customer accounts and banking operations. Implemented features such as user authentication,
+                            account creation, ATM PIN generation, password recovery, account management, and transaction
+                            handling with a user-friendly Java Swing interface. Integrated MySQL database for secure
+                            data storage.</p>
                     </div>
                 </div>
                 <div class="portfolio-item">
                     <img src="images/college_website.jpg" alt="College Website">
                     <div class="overlay">
                         <h3>College Website</h3>
-                        <p>Python Flask with Database Connectivity</p>
+                        <p>Developed a responsive college website using Python Flask with database connectivity. The
+                            website includes structured pages for college information, departments, notices, and
+                            student-related details with a clean and user-friendly interface.</p>
                     </div>
                 </div>
                 <div class="portfolio-item">
                     <img src="images/blog_website.png" alt="Blog Website">
                     <div class="overlay">
                         <h3>Blog Website</h3>
-                        <p>Python Flask</p>
+                        <p>Developed a responsive blog website using Python Flask, HTML, CSS, and database connectivity.
+                            The platform allows users to view blog posts in a clean layout, with organized content
+                            sections and a simple user-friendly interface.</p>
                     </div>
                 </div>
                 <div class="portfolio-item">
                     <img src="images/voting_system.jpg" alt="Voting System">
                     <div class="overlay">
                         <h3>Voting System</h3>
-                        <p>Python Thinker</p>
+                        <p>Developed a secure and efficient voting system using Python and Flask, with a user-friendly
+                            interface for casting votes and viewing results in real-time.</p>
                     </div>
                 </div>
                 <div class="portfolio-item">
                     <img src="images/quiz.png" alt="Quiz">
                     <div class="overlay">
                         <h3>Quiz</h3>
-                        <p>C Programming</p>
+                        <p>Developed a quiz application using C programming with multiple-choice questions, score
+                            calculation, and result display. The project focuses on basic logic building, user input
+                            handling, and structured programming concepts.</p>
                     </div>
                 </div>
             </div>
@@ -254,6 +304,5 @@
     </footer>
     <script src="script.js" defer></script>
 </body>
-
 
 </html>
